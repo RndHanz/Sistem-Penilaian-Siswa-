@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalkulator Nilai Akhir Mahasiswa</title>
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+<body>
+    
+        <h1>Kalkulator Nilai Akhir Mahasiswa</h1>
+        
+
+        
+        <div class="form-group">
+            <label for="quis">Nilai Quis (0-100)</label>
+            <input type="number" id="quis" min="0" max="100" placeholder="Masukkan nilai quis">
+        </div>
+        
+        <div class="form-group">
+            <label for="tugas">Nilai Tugas (0-100)</label>
+            <input type="number" id="tugas" min="0" max="100" placeholder="Masukkan nilai tugas">
+        </div>
+        
+        <div class="form-group">
+            <label for="uts">Nilai UTS (0-100)</label>
+            <input type="number" id="uts" min="0" max="100" placeholder="Masukkan nilai UTS">
+        </div>
+        
+        <div class="form-group">
+            <label for="uas">Nilai UAS (0-100)</label>
+            <input type="number" id="uas" min="0" max="100" placeholder="Masukkan nilai UAS">
+        </div>
+        
+        <button onclick="hitungNilai()">Hitung Nilai Akhir</button>
+        
+        <div class="result" id="result">
+            <h2>Hasil Perhitungan</h2>
+            <div class="result-item">
+                <span class="result-label">Indexs Prestasi:</span>
+                <span class="result-value" id="na-value">0.00</span>
+            </div>
+            <div class="result-item">
+                <span class="result-label">Grade:</span>
+                <span class="result-value" id="grade-value">-</span>
+            </div>
+            <div class="result-item">
+                <span class="result-label">Keterangan:</span>
+                <span class="result-value" id="ket-value">-</span>
+            </div>
+        </div>
+        
+    </div>
+
+    
+
+    <script src="script.js"></script>
+
+</body>
+</html>
